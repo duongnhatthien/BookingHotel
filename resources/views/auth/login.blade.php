@@ -46,7 +46,7 @@
                 {{ __('Login') }}
             </x-primary-button>
             <x-link-button href="{{ route('social.redirect', ['provider' => 'google']) }}" class="w-full">
-                Login By 
+                Login By
                 <svg width="24px" height="24px" viewBox="0 -0.5 25 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

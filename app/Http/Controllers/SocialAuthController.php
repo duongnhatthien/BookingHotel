@@ -34,7 +34,6 @@ class SocialAuthController extends Controller
         if ($user->markEmailAsVerified()) {
             event(new Verified($user));
         }
-        $token = Password::createToken(Auth::user());
-        return redirect()->route('password.reset', ['token' => $token, 'email' => $user->email]);
+        return redirect()->intended(route('home'));
     }
 }
